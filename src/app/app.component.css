@@ -1,0 +1,10 @@
+.test {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.test-clicked {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: blue;
+}
