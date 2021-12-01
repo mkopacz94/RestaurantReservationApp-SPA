@@ -5,9 +5,15 @@ body
 { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #52565e;
+    background-color: #2F3137;
 }
 
 .selectable-item {
     cursor: pointer;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.text-white {
+    color: white;
 }

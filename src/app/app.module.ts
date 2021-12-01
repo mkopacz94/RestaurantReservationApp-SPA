@@ -8,19 +8,28 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { TableBaseComponent } from './components/tables/table-base/table-base.component';
 import { RoundTableComponent } from './components/tables/round-table/round-table.component';
 import { SquareTableComponent } from './components/tables/square-table/square-table.component';
+import { MaterialModule } from './material/material.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FlexModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReservationsPageComponent } from './components/pages/reservations/reservations-page/reservations-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoundTableComponent,
-    SquareTableComponent
+    SquareTableComponent,
+    NavbarComponent,
+    ReservationsPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxPanZoomModule,
     NoopAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

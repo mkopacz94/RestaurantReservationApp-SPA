@@ -1,0 +1,22 @@
+<mat-toolbar class="toolbar text-white">
+  <button mat-icon-button class="example-icon" fxShow="true" fxHide.gt-sm (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="app-title">ReservationApp</span>
+  <div class="nav-links-container" fxShow="true" fxHide.lt-md>
+    <a [routerLink]="['/reservations']" routerLinkActive="router-link-active" class="text-white navbar-link">Rezerwacje</a>
+  </div>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-container" fxFlexFill>
+  <mat-sidenav class="sidenav-menu-panel" #sidenav fxHide.gt-sm>
+    <div fxFlex>
+      <a [routerLink]="['/reservations']" routerLinkActive="router-link-active" class="side-menu-link" fxLayout="row"
+        (click)="sidenav.toggle()">
+        <mat-icon class="side-menu-icon">assignment</mat-icon>Rezerwacje
+      </a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

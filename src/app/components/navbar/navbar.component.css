@@ -1,0 +1,49 @@
+.toolbar {
+    background-color: #4F535E;
+    position: fixed;
+    height: 64px;
+    z-index: 100;
+    width: 100%  !important;
+}
+.app-title {
+    margin-left: 0.5em;
+    font-weight: 400;
+}
+.nav-links-container {
+    margin-left: 1.5em;
+}
+.navbar-link {
+    text-decoration: none;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.navbar-link:hover {
+    background-color: #ffffff10;
+}
+
+.sidenav-container {
+    padding-top: 64px;
+    background-color: #2F3137;
+}
+.sidenav-menu-panel {
+    background-color: #3C3E46;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 64px;
+    padding: 0.5em;
+}
+.side-menu-link {
+    text-decoration: none;
+    font-weight: 200;
+    font-size: large;
+    padding: 1em;
+    border-radius: 10px;
+}
+.side-menu-link:active {
+    background-color: #ffffff20;
+}
+.side-menu-icon {
+    margin-right: 0.5em;
+}
