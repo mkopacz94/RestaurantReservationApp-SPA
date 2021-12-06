@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FlexModule } from '@angular/flex-layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReservationsPageComponent } from './components/pages/reservations/reservations-page/reservations-page.component';
+import { DoubleTableComponent } from './components/tables/double-table/double-table.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReservationsPageComponent } from './components/pages/reservations/reser
     RoundTableComponent,
     SquareTableComponent,
     NavbarComponent,
-    ReservationsPageComponent
+    ReservationsPageComponent,
+    DoubleTableComponent
   ],
   imports: [
     BrowserModule,
