@@ -29,6 +29,7 @@
 }
 .sidenav-menu-panel {
     background-color: #3C3E46;
+    width: 70%;
     box-sizing: border-box;
     transition: 0.3s;
     margin-top: 64px;

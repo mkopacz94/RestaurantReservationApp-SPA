@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReservationsPageComponent } from './components/pages/reservations/reservations-page/reservations-page.component';
 import { DoubleTableComponent } from './components/tables/double-table/double-table.component';
 import { FourPersonTableComponent } from './components/tables/four-person-table/four-person-table.component';
+import { ReservationsListComponent } from './components/pages/reservations/reservations-list/reservations-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FourPersonTableComponent } from './components/tables/four-person-table/
     NavbarComponent,
     ReservationsPageComponent,
     DoubleTableComponent,
-    FourPersonTableComponent
+    FourPersonTableComponent,
+    ReservationsListComponent
   ],
   imports: [
     BrowserModule,

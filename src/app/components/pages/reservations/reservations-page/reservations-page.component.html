@@ -1,9 +1,10 @@
 <div fxFlexFill>
-    <div fxFlex="300px" class="reservations-list"></div>
-    <div fxFlex class="room-projection">
-        <app-double-table></app-double-table>
-        <app-double-table></app-double-table>
-        <app-four-person-table></app-four-person-table>
+    <div fxFlex="350px" class="reservations-list">
+        <app-reservations-list></app-reservations-list>
     </div>
-    
+    <div fxFlex class="room-projection">
+        <app-double-table style="position: absolute;"></app-double-table>
+        <app-double-table style="position: absolute; top: 200px;"></app-double-table>
+        <app-four-person-table style="position: absolute; top: 400px;"></app-four-person-table>
+    </div> 
 </div>

@@ -1,7 +1,9 @@
 .reservations-list {
     background-color: #3C3E46;
+    padding: 1em;
 }
 .room-projection {
     padding: 16px;
     overflow-y: scroll;
+    position: relative;
 }

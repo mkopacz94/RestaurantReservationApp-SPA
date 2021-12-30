@@ -1,0 +1,32 @@
+<div>
+    <input class="search-field" fxFlexFill placeholder="Znajdź rezerwację..."/>
+    <div class="sublist-header-container">
+        <h5 class="blue-header-color sublist-header">ZAJĘTE</h5>
+        <div class="guests-sum-container">
+            <mat-icon class="blue-header-color">person_outline</mat-icon>
+            <h5 class="blue-header-color guests-sum-text">5</h5>
+        </div>        
+    </div>
+    <ul class="reservations-list">
+        <li *ngFor="let reservation of occupied" fxLayout="row" class="reservations-list-element">
+            <div fxFlex="80px" class="hour-container" fxLayoutAlign="center center">
+                <div class="hour">
+
+                </div>
+            </div>
+            <div fxFlex="80%" class="info-container" fxLayout="column"  fxLayoutAlign="center start">
+                <p>{{reservation.name}}</p>
+                <p class="font-light">{{reservation.phoneNumber}}</p>
+                <p class="font-light font-small">{{reservation.numberOfGuests}} gości</p>
+            </div>
+            <div fxFlex="20%" class="additional-info-container"></div>
+        </li>
+    </ul>
+    <div class="sublist-header-container">
+        <h5 class="blue-header-color sublist-header">NADCHODZĄCE</h5>
+        <div class="guests-sum-container">
+            <mat-icon class="blue-header-color">person_outline</mat-icon>
+            <h5 class="blue-header-color guests-sum-text">18</h5>
+        </div>        
+    </div>
+</div>
