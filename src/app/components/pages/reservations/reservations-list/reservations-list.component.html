@@ -8,8 +8,11 @@
         </div>        
     </div>
     <ul class="reservations-list">
-        <li *ngFor="let reservation of occupied" fxLayout="row" class="reservations-list-element">
-            <div fxFlex="80px" class="hour-container" fxLayoutAlign="center center">
+        <li *ngFor="let reservation of occupied" fxLayout="row" 
+            class="reservations-list-element"
+            [class.selected]="reservation === selectedReservation"
+            (click)="reservationClicked(reservation)">
+            <div fxFlex="auto" fxLayoutAlign="center center">
                 <div class="hour">
 
                 </div>

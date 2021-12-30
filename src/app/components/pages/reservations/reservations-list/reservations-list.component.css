@@ -43,20 +43,33 @@
     padding: 0;
     margin: 0;
 }
+.reservations-list li.selected {
+    background-color: #ffffff10;
+}
+.reservations-list li.selected:hover {
+    background-color: #ffffff15;
+}
 .reservations-list-element {
+    padding: 0.8em;
     margin-top: 1em;
     min-height: 80px;
     cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
 }
-.hour-container {
+.reservations-list-element:hover {
+    background-color: #ffffff05;
+}
+.reservations-list-element + .reservations-list-element {
+    margin-top: 0.2em;
 }
 .hour {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     background-color: #2E3038;
 }
 .info-container {
-    margin-left: 0.3em;
+    margin-left: 0.8em;
     margin-top: -0.3em;
 }
 .info-container p {
@@ -67,5 +80,4 @@
     margin-top: 0.3em;
 }
 .additional-info-container {
-    background-color: green;
 }

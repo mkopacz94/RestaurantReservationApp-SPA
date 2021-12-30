@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Reservation } from 'src/app/model/reservation';
+import { ReservationsPageComponent } from '../reservations-page/reservations-page.component';
 
 @Component({
   selector: 'app-reservations-list',
@@ -7,6 +8,8 @@ import { Reservation } from 'src/app/model/reservation';
   styleUrls: ['./reservations-list.component.css']
 })
 export class ReservationsListComponent implements OnInit {
+
+  selectedReservation ?: Reservation;
 
   occupied: Array<Reservation> = [
     { id: 0, name: "Mateusz Kopacz", phoneNumber: "+48 697263903", numberOfGuests: 2},
@@ -17,4 +20,7 @@ export class ReservationsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  reservationClicked(reservation: Reservation) {
+    this.selectedReservation = reservation;
+  }
 }
