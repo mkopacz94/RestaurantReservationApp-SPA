@@ -13,8 +13,8 @@
             [class.selected]="reservation === selectedReservation"
             (click)="reservationClicked(reservation)">
             <div fxFlex="auto" fxLayoutAlign="center center">
-                <div class="hour">
-
+                <div class="hour" fxLayoutAlign="center center">
+                    <h3 class="font-light text-white">12:30</h3>
                 </div>
             </div>
             <div fxFlex="80%" class="info-container" fxLayout="column"  fxLayoutAlign="center start">
@@ -22,7 +22,16 @@
                 <p class="font-light">{{reservation.phoneNumber}}</p>
                 <p class="font-light font-small">{{reservation.numberOfGuests}} gości</p>
             </div>
-            <div fxFlex="20%" class="additional-info-container"></div>
+            <div fxFlex="20%" fxLayout="column" fxLayoutAlign="space-between end" class="additional-info-container">
+                <div class="table-info-container vacant-color" fxLayoutAlign="center center">
+                    <h5 class="vacant-color">S1</h5>
+                </div>
+                <div fxLayoutAlign="end end" class="special-icons-container">
+                    <mat-icon *ngIf="reservation.isSpecial" class="special-guest-icon">star</mat-icon>
+                    <mat-icon *ngIf="reservation.isVegan" class="vegan-menu-icon">local_florist</mat-icon>
+                </div>
+                
+            </div>
         </li>
     </ul>
     <div class="sublist-header-container">

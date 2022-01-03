@@ -8,3 +8,7 @@
     overflow-y: scroll;
     position: relative;
 }
+.top-bar {
+    background-color: #282A30;
+    height: 48px;
+}

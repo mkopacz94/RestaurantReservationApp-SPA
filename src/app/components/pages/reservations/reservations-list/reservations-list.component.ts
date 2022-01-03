@@ -12,8 +12,9 @@ export class ReservationsListComponent implements OnInit {
   selectedReservation ?: Reservation;
 
   occupied: Array<Reservation> = [
-    { id: 0, name: "Mateusz Kopacz", phoneNumber: "+48 697263903", numberOfGuests: 2},
-    { id: 0, name: "Jan Kowalski", phoneNumber: "+48 697263903", numberOfGuests: 4}
+    { id: 0, name: "Mateusz Kopacz", phoneNumber: "+48 697263903", numberOfGuests: 2, isSpecial: true, isVegan: false},
+    { id: 0, name: "Jan Kowalski", phoneNumber: "+48 697263903", numberOfGuests: 4, isSpecial: false, isVegan: true},
+    { id: 0, name: "Dominika Piotrowska", phoneNumber: "+48 697263903", numberOfGuests: 4, isSpecial: true, isVegan: true}
   ]
   constructor() { }
 

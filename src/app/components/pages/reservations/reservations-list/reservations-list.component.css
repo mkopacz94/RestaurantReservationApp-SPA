@@ -79,5 +79,25 @@
 .info-container p + p {
     margin-top: 0.3em;
 }
-.additional-info-container {
+.special-icons-container mat-icon {
+    transform: scale(0.8);
+}
+.special-guest-icon {
+    color: #ffba18;
+}
+.vegan-menu-icon {
+    color: #3cd45b;
+}
+.table-info-container {
+    border: #BCCFFF 2px solid;
+    border-radius: 5px;
+}
+.table-info-container h5 {
+    margin: 0;
+    margin-top: -0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.vacant-color {
+    color: #BCCFFF;
 }

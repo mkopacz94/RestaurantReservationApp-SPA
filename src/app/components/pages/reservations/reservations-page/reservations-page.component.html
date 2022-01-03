@@ -1,10 +1,13 @@
-<div fxFlexFill fxLayout="row" fxLayout.lt-md="column">
-    <div fxFlex="350px" fxFlex.lt-md="40%" class="reservations-list">
-        <app-reservations-list></app-reservations-list>
+<div fxFlexFill fxLayout="column">
+    <div class="top-bar"></div>
+    <div fxFlex="grow" fxLayout="row" fxLayout.lt-md="column">
+        <div fxFlex="350px" fxFlex.lt-md="40%" class="reservations-list">
+            <app-reservations-list></app-reservations-list>
+        </div>
+        <div fxFlex class="room-projection">
+            <app-double-table style="position: absolute;"></app-double-table>
+            <app-double-table style="position: absolute; top: 200px;"></app-double-table>
+            <app-four-person-table style="position: absolute; top: 400px;"></app-four-person-table>
+        </div> 
     </div>
-    <div fxFlex class="room-projection">
-        <app-double-table style="position: absolute;"></app-double-table>
-        <app-double-table style="position: absolute; top: 200px;"></app-double-table>
-        <app-four-person-table style="position: absolute; top: 400px;"></app-four-person-table>
-    </div> 
 </div>

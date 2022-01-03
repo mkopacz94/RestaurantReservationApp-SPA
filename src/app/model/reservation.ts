@@ -3,4 +3,6 @@ export class Reservation {
     name: string;
     phoneNumber: string;
     numberOfGuests: number;
+    isSpecial: boolean;
+    isVegan: boolean;
 }
