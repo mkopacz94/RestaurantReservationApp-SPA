@@ -3,10 +3,17 @@
         <div fxFlex="350px" fxFlex.lt-md="40%" class="reservations-list">
             <app-reservations-list></app-reservations-list>
         </div>
-        <div fxFlex class="room-projection">
-            <app-double-table style="position: absolute;"></app-double-table>
-            <app-double-table style="position: absolute; top: 200px;"></app-double-table>
-            <app-four-person-table style="position: absolute; top: 400px;"></app-four-person-table>
-        </div> 
+        <div fxFlex fxLayout="column">
+            <div fxLayoutAlign="end center" class="room-projection-top-bar">
+                <button class="button button-primary">
+                    <div fxLayoutAlign="center center">
+                        <mat-icon>add</mat-icon>
+                        <p class="new-reservation-text">Nowa rezerwacja</p>
+                    </div>
+                </button>
+            </div>
+            <app-room-projection fxFlex></app-room-projection>
+        </div>
+        
     </div>
 </div>

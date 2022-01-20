@@ -16,6 +16,7 @@ import { ReservationsPageComponent } from './components/pages/reservations/reser
 import { DoubleTableComponent } from './components/tables/double-table/double-table.component';
 import { FourPersonTableComponent } from './components/tables/four-person-table/four-person-table.component';
 import { ReservationsListComponent } from './components/pages/reservations/reservations-list/reservations-list.component';
+import { RoomProjectionComponent } from './components/pages/reservations/room-projection/room-projection.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReservationsListComponent } from './components/pages/reservations/reser
     ReservationsPageComponent,
     DoubleTableComponent,
     FourPersonTableComponent,
-    ReservationsListComponent
+    ReservationsListComponent,
+    RoomProjectionComponent
   ],
   imports: [
     BrowserModule,

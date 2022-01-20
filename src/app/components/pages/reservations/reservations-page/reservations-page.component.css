@@ -3,8 +3,10 @@
     padding: 1em;
     overflow-y: scroll;
 }
-.room-projection {
-    padding: 16px;
-    overflow-y: scroll;
-    position: relative;
+.room-projection-top-bar {
+    padding: 0.7em;
+    background-color: #282A30;
+}
+.new-reservation-text {
+    margin: 2px 0 0 0.2em;
 }

@@ -1,0 +1,5 @@
+.room-projection {
+    padding: 16px;
+    overflow-y: scroll;
+    position: relative;
+}

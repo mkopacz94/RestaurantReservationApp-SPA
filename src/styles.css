@@ -41,3 +41,27 @@ body
   ::-webkit-scrollbar-thumb:hover {
     background: #ffffff40;
   }
+
+
+  /* Buttons styles */
+  .button {
+    padding: 0.5em 1em;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 4px;
+  }
+  .button-primary {
+    background-color: #0085FF;
+    color: white;
+  }
+  .button-primary:hover {
+    background-color: #007df0;
+  }
+  .button-primary:active {
+    background-color: #0078e7;
+  }
+  .button-primary:focus {
+    outline: #0085ff50 solid 4px;
+  }
