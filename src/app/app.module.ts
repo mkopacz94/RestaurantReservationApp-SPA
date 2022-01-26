@@ -17,6 +17,8 @@ import { DoubleTableComponent } from './components/tables/double-table/double-ta
 import { FourPersonTableComponent } from './components/tables/four-person-table/four-person-table.component';
 import { ReservationsListComponent } from './components/pages/reservations/reservations-list/reservations-list.component';
 import { RoomProjectionComponent } from './components/pages/reservations/room-projection/room-projection.component';
+import { SearchFilterPipe } from './_pipes/search-filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { RoomProjectionComponent } from './components/pages/reservations/room-pr
     DoubleTableComponent,
     FourPersonTableComponent,
     ReservationsListComponent,
-    RoomProjectionComponent
+    RoomProjectionComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { RoomProjectionComponent } from './components/pages/reservations/room-pr
     NoopAnimationsModule,
     DragDropModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

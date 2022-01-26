@@ -5,4 +5,6 @@ export class Reservation {
     numberOfGuests: number;
     isSpecial: boolean;
     isVegan: boolean;
+    isSeated: boolean;
+    seatedAtTable: number;
 }
