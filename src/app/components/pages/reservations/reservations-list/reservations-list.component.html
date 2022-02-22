@@ -1,4 +1,9 @@
 <div>
+    <div fxFlexFill>
+        <app-reservations-date-selection fxFlex="60%"></app-reservations-date-selection>
+        <app-reservations-date-selection class="reservations-date" fxFlex="40%"></app-reservations-date-selection>
+    </div>
+   
     <input class="search-field" fxFlexFill placeholder="Znajdź rezerwację..." [(ngModel)]="searchQuery"/>
     <div class="sublist-header-container">
         <h5 class="blue-header-color sublist-header">ZAJĘTE</h5>
