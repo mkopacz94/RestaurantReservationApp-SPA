@@ -22,7 +22,6 @@
 ::ng-deep app-reservations-meal-selection .mat-select-value {
     padding: 2px !important;
     color: white !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ::ng-deep app-reservations-meal-selection .mat-form-field-flex {
     padding: 0 !important;
