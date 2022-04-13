@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationsDateSelectionComponent implements OnInit {
 
-  meals : Array<string> = ["Śniadanie", "Obiad", "Kolacja"];
-  selectedMeal: string = "Śniadanie";
-  selected = 'option2';
-
   constructor() { }
 
   ngOnInit(): void {

@@ -19,6 +19,7 @@ import { ReservationsListComponent } from './components/pages/reservations/reser
 import { RoomProjectionComponent } from './components/pages/reservations/room-projection/room-projection.component';
 import { SearchFilterPipe } from './_pipes/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { ReservationsMealSelectionComponent } from './components/pages/reservations/reservations-meal-selection/reservations-meal-selection.component';
 import { ReservationsDateSelectionComponent } from './components/pages/reservations/reservations-date-selection/reservations-date-selection.component';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ReservationsDateSelectionComponent } from './components/pages/reservati
     ReservationsListComponent,
     RoomProjectionComponent,
     SearchFilterPipe,
+    ReservationsMealSelectionComponent,
     ReservationsDateSelectionComponent
   ],
   imports: [

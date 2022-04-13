@@ -1,0 +1,7 @@
+<mat-form-field appearance="fill">
+    <mat-select class="meal-select" [(value)]="selectedMeal">
+        <mat-option *ngFor="let meal of meals" [value]="meal">
+            {{meal}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

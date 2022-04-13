@@ -1,0 +1,42 @@
+::ng-deep app-reservations-meal-selection .mat-form-field {
+    width: 100% !important;
+    height: 100% !important;
+}
+::ng-deep app-reservations-meal-selection .mat-form-field-wrapper {
+    padding: 0 !important;
+    height: 100% !important;
+    margin-top: auto;
+    margin-left: auto;
+}
+::ng-deep app-reservations-meal-selection .mat-form-field-infix {
+    border: 0 !important;
+    padding: .6em !important;
+    width: 100% !important;
+}
+::ng-deep app-reservations-meal-selection .mat-select-arrow-wrapper {
+    transform: translateY(0) !important;
+}
+::ng-deep app-reservations-meal-selection .mat-select-arrow {
+    color: white !important;
+}
+::ng-deep app-reservations-meal-selection .mat-select-value {
+    padding: 2px !important;
+    color: white !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::ng-deep app-reservations-meal-selection .mat-form-field-flex {
+    padding: 0 !important;
+    background-color: #2F3137 !important;
+    height: 100% !important;
+    align-items: center !important;
+}
+::ng-deep app-reservations-meal-selection .mat-form-field-underline {
+    display: none;
+}
+::ng-deep .mat-select-panel {
+    background-color: #4F535E;
+    color: white;
+}
+::ng-deep .mat-option-text {
+    color: white;
+}
