@@ -8,6 +8,11 @@ body
     background-color: #2F3137;
 }
 
+:root {
+  --dark-input-color:#2F3137;
+  --dark-input-placeholder-color: #757575;
+}
+
 .selectable-item {
     cursor: pointer;
 }

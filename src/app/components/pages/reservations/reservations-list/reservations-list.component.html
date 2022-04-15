@@ -28,8 +28,8 @@
                 <p class="font-light font-small">{{reservation.numberOfGuests}} gości</p>
             </div>
             <div fxFlex="20%" fxLayout="column" fxLayoutAlign="space-between end" class="additional-info-container">
-                <div class="table-info-container vacant-color" fxLayoutAlign="center center">
-                    <h5 class="vacant-color">S{{reservation.seatedAtTable}}</h5>
+                <div class="table-info-container occupied-color" fxLayoutAlign="center center">
+                    <h5 class="occupied-color">S{{reservation.seatedAtTable}}</h5>
                 </div>
                 <div fxLayoutAlign="end end" class="special-icons-container">
                     <mat-icon *ngIf="reservation.isSpecial" class="special-guest-icon">star</mat-icon>
@@ -61,11 +61,15 @@
                 <p class="font-light">{{reservation.phoneNumber}}</p>
                 <p class="font-light font-small">{{reservation.numberOfGuests}} gości</p>
             </div>
-            <div fxFlex="20%" fxLayout="column" fxLayoutAlign="end end" class="additional-info-container">
-                <div class="special-icons-container">
+            <div fxFlex="20%" fxLayout="column" fxLayoutAlign="space-between end" class="additional-info-container">
+                <div class="table-info-container reserved-color" fxLayoutAlign="center center">
+                    <h5 class="reserved-color">S{{reservation.seatedAtTable}}</h5>
+                </div>
+                <div fxLayoutAlign="end end" class="special-icons-container">
                     <mat-icon *ngIf="reservation.isSpecial" class="special-guest-icon">star</mat-icon>
                     <mat-icon *ngIf="reservation.isVegan" class="vegan-menu-icon">local_florist</mat-icon>
                 </div>
+                
             </div>
         </li>
     </ul>

@@ -1,11 +1,12 @@
 ::ng-deep app-reservations-date-selection .mat-form-field {
     width: 100%;
-    background-color: #2F3137 !important;
+    border-radius: 5px !important;
+    background-color: var(--dark-input-color);
     color: white;
 }
 ::ng-deep app-reservations-date-selection .mat-form-field-wrapper {
     padding: 0;
-    padding: .3em .3em .3em .6em;
+    padding: .1em .3em .1em .6em;
 }
 ::ng-deep app-reservations-date-selection .mat-form-field-flex {
     padding: 0 !important;
@@ -28,3 +29,6 @@
 ::ng-deep .mat-icon-button {
     color: white;
 }
+.mat-input-element::placeholder{
+    color: var(--dark-input-placeholder-color);
+ }

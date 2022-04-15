@@ -25,7 +25,8 @@
 }
 ::ng-deep app-reservations-meal-selection .mat-form-field-flex {
     padding: 0 !important;
-    background-color: #2F3137 !important;
+    border-radius: 5px !important;
+    background-color: var(--dark-input-color) !important;
     height: 100% !important;
     align-items: center !important;
 }
