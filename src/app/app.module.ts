@@ -4,7 +4,7 @@ import { NgxPanZoomModule } from 'ngx-panzoom';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { TableBaseComponent } from './components/tables/table-base/table-base.component';
 import { RoundTableComponent } from './components/tables/round-table/round-table.component';
 import { SquareTableComponent } from './components/tables/square-table/square-table.component';
@@ -21,6 +21,9 @@ import { SearchFilterPipe } from './_pipes/search-filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { ReservationsMealSelectionComponent } from './components/pages/reservations/reservations-meal-selection/reservations-meal-selection.component';
 import { ReservationsDateSelectionComponent } from './components/pages/reservations/reservations-date-selection/reservations-date-selection.component';
+import { ClickOutsideDirective } from './directives/ClickOutsideDirective';
+import { ModalDirective } from './directives/ModalDirective';
+import { NewReservationModalComponent } from './components/modals/new-reservation-modal/new-reservation-modal.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { ReservationsDateSelectionComponent } from './components/pages/reservati
     RoomProjectionComponent,
     SearchFilterPipe,
     ReservationsMealSelectionComponent,
-    ReservationsDateSelectionComponent
+    ReservationsDateSelectionComponent,
+    ClickOutsideDirective,
+    ModalDirective,
+    NewReservationModalComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +51,8 @@ import { ReservationsDateSelectionComponent } from './components/pages/reservati
     DragDropModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
